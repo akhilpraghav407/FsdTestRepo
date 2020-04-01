@@ -1,0 +1,63 @@
+*{
+	padding:0;
+	margin:0;
+
+}
+body{
+	background-size: cover;
+	
+
+}
+#logo{
+	height: 70px;
+	width:70px;
+	border: 2px solid black;
+	margin-left: 5%;
+	margin-top: 5px;
+}
+header{
+	background-color: rgba(68, 25, 110, 0.445);
+	height: 5em;
+
+}
+.header-tag{
+	float: right;
+	margin-top: 32px;
+	margin-right: 50px;
+}
+.header-tag a{
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	color: rgb(2, 0, 7);
+	padding: 10px;
+	text-decoration: none;
+	border: 3px solid black;
+	margin-right: 10px;
+
+}
+.header-tag a:hover{
+	background-color: orangered;
+	color: seagreen;
+	transition: 0.5s ease-in-out;
+}
+.footer{
+    height: 100%;
+    width: 100%;
+    margin-top: 80%;
+	background-color: darkolivegreen;
+	text-align: center;
+}
+.row1{
+	margin-left: 5%;
+	margin-right: 5%;
+	margin-top: 5%;
+	line-height: 2.5rem;
+}
+.para1{
+	font-size: large;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	font-style: oblique;
+}
+.para2{
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-style: inherit;
+}

@@ -1,0 +1,38 @@
+body{
+    background-image: url("images/signup.jpg");
+    background-color: lightcoral;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-left: 50%;
+    
+}
+
+/* *{
+    box-sizing: border-box;
+} */
+.signup{
+   
+    border: 2px solid black;
+    height: 700px;
+    width: 500px;
+    padding-left: 30px;
+    padding-top: 10px;
+
+}
+.signup input{
+    height: 2em;
+    width: 80%;
+    
+}
+.registerbtn{
+    background-color: green;
+    width: 20%;
+    height: 4em;
+    border: 1px solid red;
+    border-radius: 15%;
+    
+}
+ a:hover{
+    color:red;
+}
+

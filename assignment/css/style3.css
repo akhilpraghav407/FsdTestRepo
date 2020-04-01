@@ -1,0 +1,17 @@
+
+
+img{
+    height: 250px;
+    width: 280px; 
+}
+
+.inner{
+    overflow: hidden;
+
+}
+.inner img{
+    transition: all 1.5s ease;
+}
+.inner:hover img{
+    transform: scale(2);
+}  
