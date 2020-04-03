@@ -46,18 +46,38 @@ header{
 	background-color: darkolivegreen;
 	text-align: center;
 }
+.footer{
+    height: 100%;
+    width: 100%;
+    margin-top: 80%;
+	background-color: darkolivegreen;
+	text-align: center;
+}
 .row1{
+	margin-left: 3%;
 	margin-left: 5%;
 	margin-right: 5%;
 	margin-top: 5%;
-	line-height: 2.5rem;
 }
 .para1{
+	
+	line-height: 2.5rem;
+	border: 2px solid black;
+	border-radius: 5%;
 	font-size: large;
 	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 	font-style: oblique;
+	background-color: darkseagreen;
+	padding: 10px;
 }
-.para2{
+ .para2{
+	
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 	font-style: inherit;
+	line-height: 2.5rem;
+	background-color: darkgray;
+	border: 2px solid black;
+	padding: 10px;
+	
 }
+ 
