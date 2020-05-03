@@ -1,0 +1,52 @@
+
+body{
+    margin: auto;
+    background: seashell;
+    
+}
+.header{
+    width: 100%;
+    height: 60px;
+    background: thistle;
+    
+    
+}
+#head1{
+    text-align: center;
+    margin-top: 0;
+    color: darkred;
+    padding-top: 10px;
+    
+}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    
+  }
+#butt{
+    padding: 3px 47px 8px 44px;
+    border-radius: 22px;
+    position: relative;
+    transform: translate(677px, 42px);
+    background: lightcoral;
+    color: rebeccapurple;
+   
+}
+#demo{
+    background: cornflowerblue;
+    position: fixed;
+    transform: translate(20%, 94px);
+}
+#butt:hover{
+    cursor: pointer;
+    transition: ease-in-out;
+   
+}
+h4{
+    border-bottom: 2px solid black;
+    padding-left: 8px;
+}
+h2{
+    color: blue;
+}
+

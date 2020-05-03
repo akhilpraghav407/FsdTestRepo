@@ -1,0 +1,89 @@
+{
+    "grocery" :[
+        {
+            "SerialNo": 1,
+             "Name" : "Onions",
+             "Quantity":1,
+             "Unit": "kg",
+             "Department": "Produce",
+             "Notes":"pure"
+        },
+        {
+            "SerialNo" : 2,
+            "Name":"Rice",
+            "Quantity":1,
+            "Unit":"kg",
+            "Department":"Grains and Bread",
+            "Notes":"first Quality"
+
+
+        },
+        {
+            "SerialNo" : 3,
+            "Name":"Cooking oil",
+            "Quantity":1,
+            "Unit":"ltr",
+            "Department":"Oil & Fat",
+            "Notes":"first Quality"
+        },
+        {
+            "SerialNo" : 4,
+            "Name":"Milk",
+            "Quantity":1,
+            "Unit":"ltr",
+            "Department":"Dairy",
+            "Notes":"pure"
+
+        },
+        {
+            "SerialNo" : 5,
+            "Name":"Salt",
+            "Quantity":1,
+            "Unit":"kg",
+            "Department":"Condiments",
+            "Notes":"first Quality"
+        },
+        {
+             "SerialNo" : 6,
+            "Name":"Chopped tomatoes",
+            "Quantity":1,
+            "Unit":"kg",
+             "Department":"Tinned & Dried Produce",
+            "Notes":"first Quality"
+        },
+        {
+             "SerialNo" : 7,
+            "Name":"Garlic",
+            "Quantity":1,
+            "Unit":"kg",
+            "Department":" Produce",
+            "Notes":"first Quality"
+        },
+        {
+            "SerialNo" : 8,
+            "Name":"Skinless white meat",
+            "Quantity":1,
+            "Unit":"kg",
+            "Department":"Meat & Fish",
+            "Notes":"first Quality"
+        },
+        {
+            "SerialNo" : 9,
+            "Name":"All-purpose flour",
+            "Quantity":1,
+            "Unit":"kg",
+            "Department":"Grains and Bread",
+            "Notes":"first Quality"
+        },
+        {
+            "SerialNo" : 10,
+            "Name":"Fruit, nuts, and seeds",
+            "Quantity":1,
+            "Unit":"kg",
+            "Department":"Tinned & Dried Produce",
+            "Notes":"first Quality"
+        }
+
+
+    ]
+}

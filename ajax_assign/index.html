@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div class= "main">
+        <div class= "header">
+           <h1 id="head1" >Grocery Shopping List</h1>
+        </div>
+        <div class="list">
+          <Button id="butt" onclick="valid();"><h3>View Items</h3></Button>
+            <table id="demo" style="width:72%">
+                <tr>
+                  <th><h2>SerialNo.</h2></th>
+                  <th><h2>Name</h2></th> 
+                  <th><h2>Quantity</h2></th>
+                  <th><h2>Unit</h2></th>
+                  <th><h2>Department</h2></th>
+                  <th><h2>Notes</h2></th>
+                </tr>
+                <tr>
+                  <td id="data1"></td>
+                  <td id="data2"></td>
+                  <td id="data3"></td>
+                  <td id="data4"></td>
+                  <td id="data5"></td>
+                  <td id="data6"></td>
+                </tr>
+                </table>
+        </div>
+   </div>
+   <script src="ajax.js"></script>
+</body>
+</html>
