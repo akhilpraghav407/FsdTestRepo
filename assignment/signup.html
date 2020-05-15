@@ -9,7 +9,7 @@
 </head>
 <body > 
     
-    <form name="myForm" action="login.html" class="signup" onsubmit="return validation()" >
+    <form name="myForm" action="login.html" class="signup" onsubmit="return valid();" >
         <h1 style="text-align: center;">Create an account</h1>
         <div class="input">
             <label><b>First Name</b></label>
@@ -40,19 +40,19 @@
         </div>
         <div class="input">
             <label for="psw"><b>Password</b></label><br>
-            <input type="password" placeholder="Enter Password" name="psw"  id="pwd" autocomplete="off" ><p id="msg2"></p>
+            <input type="password" placeholder="Enter Password" name="psw"  id="pwd" autocomplete="off"  ><p id="msg2"></p>
            
         </div>
         <div class="input">
             <br>
             <label for="mobnumber"><b>MobileNumber</b></label><br>
-            <input type="text" placeholder="MobileNumber" name="mobnumbr"  id="phone" autocomplete="off"><p id="msg3"></p>
+            <input type="text" placeholder="MobileNumber" name="mobnumbr"  id="mob" autocomplete="off"><p id="msg3"></p>
             <hr><br>
         </div>
 
         <div>
             <p>By creating an account you agree to our <a href="#" id="link">Terms & Privacy</a>.</p>
-            <a href="login.html"><button type="submit" class="registerbtn" ><h2><b>Register</b></h2></a></button>
+            <a href="login.html"><button type="submit" class="registerbtn" ondblclick="alert();"><h2><b>Register</b></h2></a></button>
         </div>
 
         

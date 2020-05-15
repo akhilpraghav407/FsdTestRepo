@@ -1,82 +1,98 @@
 
-
-
-
-
- function validation(){
-
-
-    var name = document.getElementById("name").value;
-    var last =document.getElementById("last").value;
-    var email = document.getElementById("email").value;
-    var pws= document.getElementById("pwd").value;
-    var error= document.getElementById("msg2");
-    var phone = document.getElementById("phone").value;
-   
-    var pass;
-    
-    let regexp1 =/^(?=.*[0-9]+.*)(?=.*[a-zA-Z]+.*)[0-9a-zA-Z]{6,}$/;
-
-    if(name == "" || name.length<6){
-
-        // document.getElementById('user').innerHTML="please fill name";
-        // user.style.color= "red";
-        alert('please write your name');
-        return false;
-    }
-
-    if(last == "" || last.length<3){
-        // document.getElementById("user1").innerHTML="please enter your last name";
-        // user1.style.color= "red";
-        alert('please write your last name');
-        return false;
+function valid(){
+    var pass = document.getElementById("pwd");
+    var phone = document.getElementById("mob");
+    var fName = document.getElementById("name");
+    var lName = document.getElementById("last");
+        if(fName){
+           nameValid();
+        }
+        if(lName){
+           lastValid()
+        }
+        if(pass){
+           passValid();
+        }
+        if(phone){
+           return phoneValid();
+        }
         
+
+    
+    
+    
+        function nameValid(){
+            var letters = /^[a-zA-Z ]{5,20}$/;
+            if(fName.value.match(letters)){
+                alert("valid username"); 
+                return true;
+            }
+            else{
+                alert("username must greater than 5 letters");
+                return false;
+            }
+
+        }  
+        function lastValid(){
+            if(lName.length>4){
+                alert("valid last name");
+                return true;
+            }
+            else{
+                alert("last name atleast contain 4 letters");
+                return false;
+            }
+        }      
+
+
+
+
+    function passValid() { 
+        var passw = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,20}$/;
+    
+            if(pass.value.match(passw)){ 
+                document.getElementById("msg2").innerHTML = "** Strong Password **";
+                document.getElementById("msg2").style.color = "Green";
+                return true;
+            }
+            else{ 
+                    alert("password between 7 to 15 characters which contain at least one numeric digit and a special character");
+                    document.getElementById("msg2").innerHTML = "** Weak Password **";
+                    document.getElementById("msg2").style.color = "red";
+                    return false;
+            }
+
+}
+
+    function phoneValid(){
+        var phoneno = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;
+    
+            if(phone.value.match(phoneno)){
+                // alert("valid phone number");
+                document.getElementById("msg3").innerHTML = "** valid  phone number **";
+                document.getElementById("msg3").style.color = "green";
+                return true;
+            }
+             else{
+            // alert(" valid  phone number like XXX-XXX-XXXX, XXX.XXX.XXXX, XXX XXX XXXX")
+                document.getElementById("msg3").innerHTML = "** valid  phone number like XXX XXX XXXX **";
+                document.getElementById("msg3").style.color = "red";
+                return false;
+            }
+
+    
     }
-    if(email == "" ){
-        document.getElementById("msg1").innerHTML="please enter valid email";
-        msg1.style.color= "red";
-        alert('please enter valid email');
-        return false;
-
-
-    }
-    
-    
-     
-
-   
-    
-   if(pws.length== ""  || pws.length<=8){
-    // var pass="please enter password";
-    // msg2.innerHTML = pass;
-    alert("Type your password");
-    return false;
-   }
-
-   if(phone.length=="" || phone.length != 10){
-    //   var text= "please enter valid phone number";
-    //    msg3.innerHTML = text;
-       alert("enter correct  phone number");
-       return false;
-   }
 
 
 
-   if(regexp1.test(pws)){
-       
-      error.innerHTML = "password is good strength";
-      error.style.color="green";
-       return true;
-   }
-   else{
-    error.innerHTML  = "password is weak and   must contain 8 charecters: lowercase,uppercase,number."
-    error.style.color ="red";
-       return false;
-   }
 
-    
- }
+}
 
+
+
+
+
+ 
 
 
 
